@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_520575_test_appl.Testscriptnclude</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Testscriptnclude</name>
+        <script><![CDATA[var Testscriptnclude = Class.create();
+Testscriptnclude.prototype = {
+    initialize: function() {
+    },
+	
+	// Test comment 1
+
+    type: 'Testscriptnclude'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-25 13:07:10</sys_created_on>
+        <sys_id>5d93bde41b112110000efc86cc4bcb0b</sys_id>
+        <sys_name>Testscriptnclude</sys_name>
+        <sys_package display_value="Test application" source="x_520575_test_appl">14a139601b112110000efc86cc4bcb8f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Test application">14a139601b112110000efc86cc4bcb8f</sys_scope>
+        <sys_update_name>sys_script_include_5d93bde41b112110000efc86cc4bcb0b</sys_update_name>
+    </sys_script_include>
+</record_update>
