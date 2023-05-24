@@ -21,7 +21,7 @@ jobs:
         username: 'RestUser'
         password: 'BhindiBhaja@1'
         customHeaders: '{"Content-Type": "application/json"}'
-        data: '{"inc": "value_1"}'
+        data: '{"inc": "INC0000007"}'
     - name: Show Response  
       run:  |
        echo ${{ steps.myRequest.outputs.response }}
