@@ -1,5 +1,4 @@
 name: just-create-change
-
 on: 
   workflow_dispatch:
     inputs:
