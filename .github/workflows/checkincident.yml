@@ -15,12 +15,12 @@ jobs:
       id: myRequest
       uses: fjogeleit/http-request-action@v1
       with:
-        url: 'https://dev65554.service-now.com/api/520575/testrest/getINC'
+        url: 'https://dev65554.service-now.com/api/520575/testrest/getINC?inc=INC0000007'
         method: 'GET'
         username: 'RestUser'
         password: 'BhindiBhaja@1'
         customHeaders: '{"Content-Type": "application/json"}'
-        data: '{"inc": "INC0000007"}'
+        //data: '{"inc": "INC0000007"}'
     - name: Show Response  
       run:  |
        echo ${{ steps.myRequest.outputs.response }}
