@@ -1,5 +1,17 @@
 name: first-wf
 'on': workflow_dispatch
+ inputs:
+       start_date:        
+         description: 'Change Start Date'
+         required: true
+         default: 'YYYY-MM-DDHH:MM:SS'
+       end_date:
+         description: 'Change End Date'
+         required: true
+         default: 'YYYY-MM-DDHH:MM:SS'
+
+permissions:
+  contents: read
    
 jobs:
  deployment:
