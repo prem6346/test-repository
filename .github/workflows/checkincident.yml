@@ -1,9 +1,6 @@
 name: first-wf
 'on': workflow_dispatch
-    inputs:
-       incident:        
-          description: 'Incident'
-          required: true
+   
 jobs:
  deployment:
     runs-on: ubuntu-latest
