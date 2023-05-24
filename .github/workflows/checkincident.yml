@@ -1,5 +1,10 @@
 name: first-wf
-'on': workflow_dispatch
+on: 
+  workflow_dispatch
+    inputs:
+       incident:        
+          description: 'Incident'
+          required: true
 jobs:
  deployment:
     runs-on: ubuntu-latest
@@ -8,12 +13,12 @@ jobs:
       id: myRequest
       uses: fjogeleit/http-request-action@v1
       with:
-        url: 'https://dev65554.service-now.com/api/now/table/incident/8d6353eac0a8016400d8a125ca14fc1f?sysparm_fields=number%2Cassigned_to%2Cshort_description'
+        url: 'https://dev65554.service-now.com/api/520575/testrest/getINC'
         method: 'GET'
         username: 'RestUser'
         password: 'BhindiBhaja@1'
         customHeaders: '{"Content-Type": "application/json"}'
-        //data: '{"key_1": "value_1", "key_2": "value_2"}'
+        data: '{"inc": "value_1"}'
     - name: Show Response  
       run:  |
        echo ${{ steps.myRequest.outputs.response }}
